@@ -1,0 +1,19 @@
+I'm very new to all of this and looking for help. As I try to add image files to my project I seem to be getting many errors
+I get stuck import_character_assets, specifically the character_path. I keep getting errors saying list index out of range. No variation
+of the path, absolute or direct, will fix it. I've uploaded an image of how my files are sorted (listed as mario_style_graphics.png)
+When I try to run the program this is the full list of errors I get. I am using Pycharm by the way. Thanks for any help or advice!
+Traceback (most recent call last):
+  File "C:/Users/Lauren/PycharmProjects/mario_style/main.py", line 11, in <module>
+    level = Level(level_map, screen)
+  File "C:\Users\Lauren\PycharmProjects\mario_style\level.py", line 11, in __init__
+    self.setup_level(level_data)
+  File "C:\Users\Lauren\PycharmProjects\mario_style\level.py", line 27, in setup_level
+    player_sprite = Player((x, y), self.display_surface)
+  File "C:\Users\Lauren\PycharmProjects\mario_style\player.py", line 11, in __init__
+    self.image = self.animations['idle'][self.frame_index]
+IndexError: list index out of range
+
+If anyone had any advice, I feel like the error is looking at me in the face but like I said, I've tried different variations of 
+things to get it to work. I am following the Creating a Platformer in Pygame by Clear Code tutorial on youtube. I got the images
+from Clear Code here on github as well.
+Thanks again!
